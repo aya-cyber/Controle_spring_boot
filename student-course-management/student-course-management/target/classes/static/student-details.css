@@ -1,0 +1,85 @@
+/* Style général */
+body {
+    background-color: #f0f2f5; /* Couleur de fond douce */
+    font-family: 'Arial', sans-serif; /* Police lisible */
+}
+
+/* Conteneur principal */
+.container {
+    background: linear-gradient(135deg, #ffffff, #e9ecef); /* Dégradé de fond */
+    padding: 40px; /* Espacement interne */
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Ombre portée */
+    animation: slideIn 0.8s ease-out; /* Animation d'apparition */
+    margin-top: 30px; /* Marge supérieure */
+}
+
+/* Titre */
+h1 {
+    font-size: 2.5rem; /* Taille de police du titre */
+    color: #007bff; /* Couleur bleue */
+    font-weight: 700; /* Gras */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px; /* Espace en bas du titre */
+    animation: fadeIn 1.5s ease; /* Animation d'apparition */
+}
+
+/* Paragraphe et informations de l'étudiant */
+.student-info {
+    margin-bottom: 20px; /* Espace en bas des informations de l'étudiant */
+}
+
+/* Style pour les alertes */
+.alert {
+    text-align: center; /* Centrer le texte des alertes */
+    margin-bottom: 20px; /* Espace en bas des alertes */
+}
+
+/* Style pour les boutons */
+.btn {
+    font-size: 1rem; /* Taille de police pour les boutons */
+    padding: 10px 20px; /* Espacement interne des boutons */
+    margin: 10px; /* Espace autour des boutons */
+    transition: all 0.3s ease; /* Transition pour les effets de survol */
+}
+
+/* Effet au survol des boutons */
+.btn:hover {
+    animation: vibrate 0.3s; /* Animation de vibration */
+}
+
+/* Animation de vibration */
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, 2px); }
+    50% { transform: translate(-2px, -2px); }
+    75% { transform: translate(2px, 2px); }
+    100% { transform: translate(0); }
+}
+
+/* Liste des cours */
+h2 {
+    margin-top: 30px; /* Espace en haut du titre des cours inscrits */
+    color: #343a40; /* Couleur sombre */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Commence invisible */
+    }
+    to {
+        opacity: 1; /* Devient visible */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Commence invisible */
+        transform: translateY(20px); /* Commence en bas */
+    }
+    to {
+        opacity: 1; /* Devient visible */
+        transform: translateY(0); /* Se positionne à son endroit */
+    }
+}

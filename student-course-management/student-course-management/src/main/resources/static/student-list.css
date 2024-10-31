@@ -1,0 +1,98 @@
+/* Style général de la page */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cadre principal */
+.container {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Animation de l'apparition */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Titre */
+h1 {
+    font-size: 1.8rem;
+    color: #343a40;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Boutons de navigation */
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+    opacity: 0; /* Début invisible pour l'animation */
+    transform: translateY(10px); /* Légère translation vers le bas */
+    animation: fadeInUp 0.8s forwards; /* Animation d'apparition */
+}
+
+/* Animation des boutons avec un délai pour un effet d'apparition en séquence */
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    animation-delay: 0.2s; /* Délai pour le bouton secondaire */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    animation-delay: 0.4s; /* Délai pour le bouton primaire */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Style de la table */
+.table {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+/* Animation pour les lignes de table */
+.table tbody tr {
+    opacity: 0; /* Début invisible pour l'animation */
+    transform: translateY(10px); /* Légère translation vers le bas */
+    animation: fadeInUp 0.8s forwards; /* Animation d'apparition */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Couleur de fond pour les lignes paires */
+}
+
+/* Application des animations aux lignes de la table */
+.table tbody tr {
+    animation-delay: 0.3s; /* Délai pour l'animation des lignes */
+}

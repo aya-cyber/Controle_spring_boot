@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/home.css"> <!-- Lien vers le fichier CSS externe -->
+</head>
+<body>
+<div class="container">
+    <h1>Bienvenue dans le Système de Gestion des Étudiants et des Cours</h1>
+    <p>Ceci est la page d'accueil où vous pouvez naviguer vers différentes sections de l'application.</p>
+
+    <!-- Conteneur pour centrer les boutons -->
+    <div class="btn-container">
+        <a class="btn btn-primary" th:href="@{/students}">Voir les Étudiants</a>
+        <a class="btn btn-secondary" th:href="@{/courses}">Voir les Cours</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
